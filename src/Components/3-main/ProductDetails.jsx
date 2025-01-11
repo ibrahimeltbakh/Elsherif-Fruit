@@ -78,11 +78,7 @@ ProductDetails.propTypes = {
   selectedProduct: PropTypes.shape({
     // Ensure selectedProduct is an object with required properties
     productTitle: PropTypes.string.isRequired,
-    productPrice: PropTypes.number.isRequired,
     productDescription: PropTypes.string.isRequired,
-    productCategory: PropTypes.string.isRequired,
-    discount: PropTypes.string.isRequired,
-    discountValue: PropTypes.number.isRequired,
     img0: PropTypes.string,
     img1: PropTypes.string,
     img2: PropTypes.string,

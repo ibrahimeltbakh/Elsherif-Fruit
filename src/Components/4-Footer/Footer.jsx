@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TikTokIcon from "./Tiktok";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
@@ -37,7 +37,7 @@ const lineDetails = [
   },
   {
     icon: AccessTimeOutlinedIcon,
-    details: "Business Hours: From 10:00 To 18:00",
+    details: "ساعات العمل: من 10:00 صباحًا إلى 6:00 مساءً",
   },
   {
     icon: LocalPhoneOutlinedIcon,
@@ -85,7 +85,7 @@ export default function Footer() {
             {importantLinks.map((item, index) => {
               return (
                 <li key={index}>
-                  <KeyboardDoubleArrowRightIcon
+                  <KeyboardDoubleArrowLeftIcon
                     sx={{ mr: 1, color: "var(--main-color)" }}
                   />
                   <a
@@ -124,7 +124,11 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <p>
-          Developed by <a href="#"> ibrahim eltbakh </a>
+          Developed by{" "}
+          <a href="https://wa.me/+201024556364" target="_blank">
+            {" "}
+            ibrahim eltbakh{" "}
+          </a>
         </p>
         <p> شركة الشريف لتصدير جميع المحاصيل الزراعيه &copy; </p>
       </div>

@@ -66,7 +66,8 @@ export default function Main() {
                   height="200"
                   image={item.img0}
                 />
-                <CardContent sx={{ textAlign: "center" }}>
+                <CardContent
+                  sx={{ textAlign: "center", color: "var(--main-color)" }}>
                   <Typography gutterBottom variant="h6" component="div">
                     {item.productTitle}
                   </Typography>

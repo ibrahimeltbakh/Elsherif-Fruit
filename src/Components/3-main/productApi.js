@@ -13,6 +13,9 @@ import lemon2 from "../../imgs/lemon2.jpg";
 import strawberry1 from "../../imgs/strawberry1.jpg";
 import strawberry2 from "../../imgs/strawberry2.jpg";
 import strawberry3 from "../../imgs/strawberry3.jpg";
+import potatos from "../../imgs/potatos.jpg";
+import potatos1 from "../../imgs/potatos1.jpg";
+import potatos2 from "../../imgs/potatos2.jpg";
 
 const productsApi = [
   {
@@ -54,6 +57,14 @@ const productsApi = [
     img3: "",
     productTitle: "فراولة",
     productDescription: "فراولة مصرية حلوة المذاق، تتميز بلونها الزاهي وتعبأ لتصل طازجة إلى الأسواق العالمية.",
+  },
+  {
+    img0: potatos,
+    img1: potatos1,
+    img2: potatos2,
+    img3: "",
+    productTitle: "بطاطس",
+    productDescription: "بطاطس طازجة من أفضل المزارع، تتميز بجودتها العالية وطعمها الرائع، وتعبأ بعناية لتصل طازجة إلى الأسواق العالمية.",
   },
 ];
 

@@ -1,5 +1,5 @@
 .footer {
-  direction: ltr;
+  direction: rtl;
   background-color: #191919;
   padding: 70px 0 0;
 }
@@ -14,7 +14,7 @@
   gap: 40px;
 }
 .footer .box h3 {
-  color: white;
+  color: var(--main-color);
   font-size: 40px;
   margin: 0 0 20px;
 }
@@ -69,10 +69,10 @@
   border-bottom: 1px solid #444;
 }
 .footer .box .links li:hover {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 .footer .box .links li:hover a {
-  color: white;
+  color: var(--main-color);
 }
 .footer .box .links li a {
   color: #b9b9b9;

@@ -33,7 +33,7 @@
 .header .main-nav > li:hover .Megamenu {
   opacity: 1;
   z-index: 100;
-  top: calc(100% + 1px);
+  top: calc(100% + 0.5px);
 }
 @media (max-width: 767px) {
   .header .main-nav {

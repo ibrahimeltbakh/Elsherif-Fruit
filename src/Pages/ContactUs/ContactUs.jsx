@@ -3,8 +3,18 @@ import { useForm, ValidationError } from "@formspree/react";
 import Lottie from "lottie-react";
 import done from "../../animations/done.json";
 import Hero from "../../Components/2-Hero/Hero";
+
 export default function ContactUs() {
-  const [state, handleSubmit] = useForm("xrbgzynr");
+  const [state, handleSubmit] = useForm("xkggkpeb");
+
+  // Reset form fields after submission
+  const resetForm = () => {
+    const form = document.querySelector("form");
+    if (form) {
+      form.reset();
+    }
+  };
+
   return (
     <>
       <Hero href={"#contact"} />
@@ -12,12 +22,17 @@ export default function ContactUs() {
         <div className="overlay"></div>
         <div className="container">
           <h2 className="main-title">رائيك يهمنا</h2>
-          <form onSubmit={handleSubmit}>
+          <form
+            onSubmit={(e) => {
+              handleSubmit(e);
+              resetForm();
+            }}
+            dir="rtl">
             <div className="left">
               <div>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="الاسم"
                   required
                   id="name"
                   name="name"
@@ -31,7 +46,7 @@ export default function ContactUs() {
               <div>
                 <input
                   type="number"
-                  placeholder="Your Phone"
+                  placeholder="رقم الهاتف"
                   required
                   id="phone"
                   name="phone"
@@ -48,7 +63,7 @@ export default function ContactUs() {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="البريد الالكترونى"
                 />
                 <ValidationError
                   prefix="Email"
@@ -63,7 +78,7 @@ export default function ContactUs() {
                   required
                   id="message"
                   name="message"
-                  placeholder="Your Message"
+                  placeholder="الرساله"
                 />
                 <ValidationError
                   prefix="Message"
@@ -75,7 +90,7 @@ export default function ContactUs() {
                 <input
                   type="submit"
                   disabled={state.submitting}
-                  value={state.submitting ? "Sending..." : "Send"}
+                  value={state.submitting ? "يتم الارسال..." : "ارسال"}
                 />
               </div>
             </div>
@@ -92,6 +107,7 @@ export default function ContactUs() {
                 marginTop: "1.7rem",
                 color: "var( --transparent-color)",
               }}>
+              👌 شكرا لك‘ تم ارسال رسالتك
               <Lottie
                 style={{
                   height: "45px",
@@ -100,7 +116,6 @@ export default function ContactUs() {
                 loop={false}
                 animationData={done}
               />
-              Thank You, Your Message has been sent successfuly 👌
             </h2>
           )}
         </div>
