@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import "./contactus.css";
 import { useForm, ValidationError } from "@formspree/react";
 import Lottie from "lottie-react";
@@ -17,6 +18,17 @@ export default function ContactUs() {
 
   return (
     <>
+      <Helmet>
+        <title>اتصل بنا - موقع شركة الشريف</title>
+        <meta
+          name="description"
+          content="نموذج الاتصال في موقع شركة الشريف. شارك رأيك واطرح استفساراتك، وسنكون سعداء بالرد عليك."
+        />
+        <meta
+          name="keywords"
+          content="اتصل بنا, شركة الشريف, نموذج الاتصال, استفسارات, دعم"
+        />
+      </Helmet>
       <Hero href={"#contact"} />
       <div id="contact" className="contact">
         <div className="overlay"></div>

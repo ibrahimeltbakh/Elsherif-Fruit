@@ -1,7 +1,6 @@
 import "./footer.css";
 import { useNavigate } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import TikTokIcon from "./Tiktok";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -14,24 +13,28 @@ import img4 from "../../imgs/sOrange.jpg";
 import img5 from "../../imgs/guava.jpg";
 import img6 from "../../imgs/strawberry1.jpg";
 const socialIcons = [
-  { href: "#", className: "facebook", icon: FacebookIcon },
-  { href: "#", className: "instagram", icon: InstagramIcon },
-  { href: "#", className: "tiktok", icon: TikTokIcon },
+  {
+    href: "https://www.facebook.com/share/1XcPLxs5LU/",
+    className: "facebook",
+    icon: FacebookIcon,
+  },
+  {
+    href: "https://www.tiktok.com/@elshreiffruits?_t=ZS-8tAzZuaYzNH&_r=1",
+    className: "tiktok",
+    icon: TikTokIcon,
+  },
 ];
 const importantLinks = [
   { href: "#terms", title: "الشروط والاحكام", navigatePage: "terms" },
   { href: "#shipping", title: "الشحن والتوصيل", navigatePage: "shipping" },
   { href: "#privacy", title: "سياسة الخصوصية", navigatePage: "privacy" },
-  { href: "#return", title: "سياسة الاسترجاع", navigatePage: "return" },
 ];
 const lineDetails = [
   {
     icon: LocationOnIcon,
     details: (
-      <a
-        href="https://www.google.com/maps?q=28+%D8%A3+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85+%D8%A7%D9%84%D8%BA%D8%B2%D8%A7%D9%84%D9%8A+-+%D8%A7%D9%84%D9%83%D9%88%D9%85+%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1+-+%D8%A7%D9%84%D9%87%D8%B1%D9%85&zoom=15"
-        target="_blank">
-        ٢٨ أ شارع الإمام الغزالي - الكوم الأخضر - الهرم
+      <a href="https://maps.app.goo.gl/zNsHs15EBRi92w8Y9" target="_blank">
+      مركز كفرالزيات - محافظة الغربية
       </a>
     ),
   },
@@ -71,7 +74,7 @@ export default function Footer() {
             {socialIcons.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={item.href} className={item.className}>
+                  <a href={item.href} className={item.className} target="blank">
                     <item.icon fontSize="large" />
                   </a>
                 </li>

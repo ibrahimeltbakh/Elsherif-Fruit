@@ -15,7 +15,8 @@ export default function ProductDetails({ selectedProduct }) {
         minWidth: { sm: "100%", lg: "90%" },
       }}>
       <Box>
-        <img width={300} src={selsetedImg} alt={selectedProduct.productTitle} />
+        <img width={300}
+        height={250} src={selsetedImg} alt={selectedProduct.productTitle} />
       </Box>
       <Box
         sx={{

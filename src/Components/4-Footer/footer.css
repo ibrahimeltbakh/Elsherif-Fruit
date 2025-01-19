@@ -116,6 +116,10 @@
   width: 78px;
   border: 3px solid white;
   margin: 2px;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .footer .copyright {
   padding: 25px 0;

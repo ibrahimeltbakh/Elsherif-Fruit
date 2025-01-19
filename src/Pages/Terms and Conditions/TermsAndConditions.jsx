@@ -1,7 +1,19 @@
 import Hero from "../../Components/2-Hero/Hero";
+import { Helmet } from "react-helmet";
 export default function TermsAndConditions() {
   return (
     <>
+      <Helmet>
+        <title>الشروط والأحكام - موقع شركة الشريف</title>
+        <meta
+          name="description"
+          content="اقرأ الشروط والأحكام الخاصة بموقع شركة الشريف لتعرف حقوقك وواجباتك أثناء استخدام الموقع."
+        />
+        <meta
+          name="keywords"
+          content="الشروط والأحكام, شروط الاستخدام, موقع شركة الشريف, حقوق وواجبات"
+        />
+      </Helmet>
       <Hero href={"#terms"} />
       <div id="terms" className="terms sectionPadding">
         <div className="container">

@@ -14,7 +14,6 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import TermsAndConditions from "./Pages/Terms and Conditions/TermsAndConditions";
 import ShippingAndDelivery from "./Pages/Shipping and Delivery/ShippingAndDelivery";
 import Privacy from "./Pages/Privacy Policy/Privacy";
-import ReturnPolicy from "./Pages/Return Policy/ReturnPolicy";
 import NotFound from "./Pages/NotFound";
 
 // Create the router with future flag for v7
@@ -27,7 +26,6 @@ const router = createBrowserRouter(
       <Route path="terms" element={<TermsAndConditions />} />
       <Route path="shipping" element={<ShippingAndDelivery />} />
       <Route path="privacy" element={<Privacy />} />
-      <Route path="return" element={<ReturnPolicy />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   ),

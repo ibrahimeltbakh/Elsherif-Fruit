@@ -1,7 +1,20 @@
 import Hero from "../../Components/2-Hero/Hero";
+import { Helmet } from "react-helmet";
 export default function ShippingAndDelivery() {
   return (
     <>
+      <Helmet>
+        <title>الشحن والتوصيل - موقع شركة الشريف</title>
+        <meta
+          name="description"
+          content="تعرف على سياسة الشحن والتوصيل في موقع شركة الشريف، والخدمات التي نقدمها لضمان وصول المنتجات بأسرع وقت."
+        />
+        <meta
+          name="keywords"
+          content="الشحن والتوصيل, سياسة الشحن, توصيل المنتجات, شركة الشريف"
+        />
+      </Helmet>
+
       <Hero href={"#shipping"} />
       <div id="shipping" className="shipping sectionPadding">
         <div className="container">

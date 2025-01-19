@@ -10,8 +10,7 @@ const megaMenuData = [
   { href: "#terms", title: "الشروط والاحكام", navigatePage: "terms" },
   { href: "#shipping", title: "الشحن والتوصيل", navigatePage: "shipping" },
   { href: "#privacy", title: "سياسة الخصوصية", navigatePage: "privacy" },
-  { href: "#return", title: "سياسة الاسترجاع", navigatePage: "return" },
-];
+ ];
 export default function Header() {
   const navigate = useNavigate();
   return (

@@ -49,7 +49,8 @@ export default function Main() {
               <Card
                 sx={{
                   position: "relative",
-                  maxWidth: 300,
+                  width: 250,
+                  maxWidth:400,
                   mt: 4,
                   "&:hover ": {
                     border: "1px solid var(--main-color)",

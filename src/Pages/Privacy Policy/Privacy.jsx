@@ -1,7 +1,19 @@
 import Hero from "../../Components/2-Hero/Hero";
+import { Helmet } from "react-helmet";
 export default function Privacy() {
   return (
     <>
+      <Helmet>
+        <title>سياسة الخصوصية - موقع شركة الشريف</title>
+        <meta
+          name="description"
+          content="تعرف على سياسة الخصوصية الخاصة بموقع شركة الشريف وكيفية حماية معلوماتك الشخصية."
+        />
+        <meta
+          name="keywords"
+          content="سياسة الخصوصية, حماية البيانات, المعلومات الشخصية, موقع شركة الشريف"
+        />
+      </Helmet>
       <Hero href={"#privacy"} />
       <div id="privacy" className="privacy sectionPadding">
         <div className="container">

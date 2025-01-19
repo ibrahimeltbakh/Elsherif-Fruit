@@ -1,7 +1,20 @@
 import Hero from "../../Components/2-Hero/Hero";
+import { Helmet } from "react-helmet";
 export default function AboutUs() {
   return (
     <>
+      <Helmet>
+        <title>عنّا - شركة الشريف</title>
+        <meta
+          name="description"
+          content="تعرف على شركة الشريف، المتخصصة في تصدير المنتجات الزراعية الطازجة إلى الأسواق المحلية والعالمية."
+        />
+        <meta
+          name="keywords"
+          content="شركة الشريف, تصدير, منتجات زراعية, فواكه, خضروات, عن الشركة"
+        />
+      </Helmet>
+
       <Hero href={"#aboutus"} />
       <div id="aboutus" className="aboutus sectionPadding">
         <div className="container">
